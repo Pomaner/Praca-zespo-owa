@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lista zadań — TODO</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Lista zadań</h1>
+
+      <form id="task-form">
+        <input id="title" placeholder="Tytuł" required />
+        <input id="description" placeholder="Opis (opcjonalnie)" />
+        <button type="submit">Dodaj</button>
+      </form>
+
+      <ul id="tasks"></ul>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
